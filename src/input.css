@@ -23,6 +23,7 @@ h3 {
 }
 
 p,
-span {
+span,
+li {
   font-family: "Lato";
 }

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navigation from "./components/navigation/Nav";
+import ButtonWatch from "./components/main/ButtonWatch";
 
 const seperator = " | ";
 
@@ -81,11 +82,11 @@ function App() {
               </div>
               <h2 className="uppercase my-2 text-2xl">{movie.title}</h2>
 
-              <ul className="flex items-center text-sm">
+              <ul className="flex items-center text-md">
                 {movie.genreId.map((genreId) => (
                   <>
                     <p className="pr-2">{seperator}</p>
-                    <li key={genreId} className="text-sm mr-2">
+                    <li key={genreId} className=" mr-2">
                       {genres[genreId]}
                     </li>
                   </>
@@ -94,6 +95,7 @@ function App() {
             </div>
           </>
         ))}
+        <ButtonWatch />
       </div>
     </main>
   );
