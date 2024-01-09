@@ -535,10 +535,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.m-3 {
-  margin: 0.75rem;
-}
-
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -547,6 +543,10 @@ video {
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .mt-3 {
@@ -565,6 +565,10 @@ video {
   width: 3.5rem;
 }
 
+.items-center {
+  align-items: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -577,28 +581,21 @@ video {
   background-image: url('https://image.tmdb.org/t/p/w500/xWT5F1DNxciNLEMXRl49iq8zvN7.jpg');
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
 
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
+.pr-2 {
+  padding-right: 0.5rem;
 }
 
 .text-2xl {
@@ -606,8 +603,14 @@ video {
   line-height: 2rem;
 }
 
-.font-bold {
-  font-weight: 700;
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .uppercase {
