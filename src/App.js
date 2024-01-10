@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navigation from "./components/navigation/Nav";
 import ButtonWatch from "./components/main/ButtonWatch";
+import Popular from "./components/getMovies/Popular";
 
 const seperator = " | ";
 
@@ -70,32 +71,35 @@ function App() {
 
   return (
     <main>
-      <div className="p-3 bg-[url('https://image.tmdb.org/t/p/w500/xWT5F1DNxciNLEMXRl49iq8zvN7.jpg')] bg-cover">
-        {movies.map((movie, index) => (
-          <>
-            <Navigation />
-            <div key={index} className="text-white mt-3">
-              <div className="flex text-xs">
-                <p className="">{movie.date.slice(0, 4)}</p>
-                <p className="mx-2">{seperator}</p>
-                <p>{Math.round(movie.popularity) / 10}/10</p>
-              </div>
-              <h2 className="uppercase my-2 text-2xl">{movie.title}</h2>
+      <div className="bg-[url('https://image.tmdb.org/t/p/w500/xWT5F1DNxciNLEMXRl49iq8zvN7.jpg')] bg-cover">
+        <div className="p-3">
+          {movies.map((movie, index) => (
+            <>
+              <Navigation />
+              <div key={index} className="text-white mt-3">
+                <div className="flex text-xs">
+                  <p className="">{movie.date.slice(0, 4)}</p>
+                  <p className="mx-2">{seperator}</p>
+                  <p>{Math.round(movie.popularity) / 10}/10</p>
+                </div>
+                <h2 className="uppercase my-2 text-2xl">{movie.title}</h2>
 
-              <ul className="flex items-center text-md">
-                {movie.genreId.map((genreId) => (
-                  <>
-                    <p className="pr-2">{seperator}</p>
-                    <li key={genreId} className=" mr-2">
-                      {genres[genreId]}
-                    </li>
-                  </>
-                ))}
-              </ul>
-            </div>
-          </>
-        ))}
-        <ButtonWatch />
+                <ul className="flex items-center text-md">
+                  {movie.genreId.map((genreId) => (
+                    <>
+                      <p className="pr-2">{seperator}</p>
+                      <li key={genreId} className=" mr-2">
+                        {genres[genreId]}
+                      </li>
+                    </>
+                  ))}
+                </ul>
+              </div>
+            </>
+          ))}
+          <ButtonWatch />
+        </div>
+        <Popular />
       </div>
     </main>
   );

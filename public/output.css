@@ -536,156 +536,153 @@ video {
 }
 
 .mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: 0.5rem !important;
+  margin-right: 0.5rem !important;
 }
 
 .my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
 }
 
 .ml-1 {
-  margin-left: 0.25rem;
+  margin-left: 0.25rem !important;
+}
+
+.mr-2 {
+  margin-right: 0.5rem !important;
+}
+
+.mt-3 {
+  margin-top: 0.75rem !important;
 }
 
 .mt-4 {
-  margin-top: 1rem;
+  margin-top: 1rem !important;
 }
 
-.mr-1 {
-  margin-right: 0.25rem;
+.inline-block {
+  display: inline-block !important;
 }
 
 .flex {
-  display: flex;
-}
-
-.h-3 {
-  height: 0.75rem;
+  display: flex !important;
 }
 
 .h-4 {
-  height: 1rem;
-}
-
-.h-5 {
-  height: 1.25rem;
+  height: 1rem !important;
 }
 
 .w-10 {
-  width: 2.5rem;
+  width: 2.5rem !important;
 }
 
 .w-14 {
-  width: 3.5rem;
-}
-
-.w-3 {
-  width: 0.75rem;
-}
-
-.w-4 {
-  width: 1rem;
-}
-
-.w-5 {
-  width: 1.25rem;
-}
-
-.w-28 {
-  width: 7rem;
+  width: 3.5rem !important;
 }
 
 .w-24 {
-  width: 6rem;
+  width: 6rem !important;
+}
+
+.w-4 {
+  width: 1rem !important;
+}
+
+.w-full {
+  width: 100% !important;
 }
 
 .items-center {
-  align-items: center;
+  align-items: center !important;
 }
 
 .justify-center {
-  justify-content: center;
+  justify-content: center !important;
 }
 
 .justify-between {
-  justify-content: space-between;
+  justify-content: space-between !important;
+}
+
+.overflow-hidden {
+  overflow: hidden !important;
 }
 
 .rounded-lg {
-  border-radius: 0.5rem;
+  border-radius: 0.5rem !important;
 }
 
 .border {
-  border-width: 1px;
+  border-width: 1px !important;
 }
 
 .border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important;
 }
 
 .bg-\[url\(\'https\:\/\/image\.tmdb\.org\/t\/p\/w500\/xWT5F1DNxciNLEMXRl49iq8zvN7\.jpg\'\)\] {
-  background-image: url('https://image.tmdb.org/t/p/w500/xWT5F1DNxciNLEMXRl49iq8zvN7.jpg');
+  background-image: url('https://image.tmdb.org/t/p/w500/xWT5F1DNxciNLEMXRl49iq8zvN7.jpg') !important;
+}
+
+.\!bg-cover {
+  background-size: cover !important;
 }
 
 .bg-cover {
-  background-size: cover;
-}
-
-.p-3 {
-  padding: 0.75rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
+  background-size: cover !important;
 }
 
 .p-1 {
-  padding: 0.25rem;
+  padding: 0.25rem !important;
+}
+
+.p-3 {
+  padding: 0.75rem !important;
 }
 
 .pr-2 {
-  padding-right: 0.5rem;
+  padding-right: 0.5rem !important;
 }
 
 .text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.5rem !important;
+  line-height: 2rem !important;
+}
+
+.text-lg {
+  font-size: 1.125rem !important;
+  line-height: 1.75rem !important;
 }
 
 .text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
+  font-size: 0.75rem !important;
+  line-height: 1rem !important;
+}
+
+.font-bold {
+  font-weight: 700 !important;
 }
 
 .uppercase {
-  text-transform: uppercase;
+  text-transform: uppercase !important;
 }
 
 .text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 .shadow-md {
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1) !important;
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
 }
 
 .blur {
-  --tw-blur: blur(8px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  --tw-blur: blur(8px) !important;
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow) !important;
 }
 
 @font-face {
