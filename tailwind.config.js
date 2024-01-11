@@ -8,6 +8,10 @@ module.exports = {
         futura: ["Futura", "sans-serif"],
         lato: ["Lato", "sans-serif"],
       },
+      colors: {
+        topGradient: "#993000",
+        bottomGradient: "#ffb520",
+      },
     },
   },
   plugins: [],

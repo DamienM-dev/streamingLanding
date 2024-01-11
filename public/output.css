@@ -561,16 +561,16 @@ video {
   margin-top: 1rem !important;
 }
 
-.inline-block {
-  display: inline-block !important;
-}
-
 .flex {
   display: flex !important;
 }
 
 .h-4 {
   height: 1rem !important;
+}
+
+.min-h-screen {
+  min-height: 100vh !important;
 }
 
 .w-10 {
@@ -593,6 +593,14 @@ video {
   width: 100% !important;
 }
 
+.flex-grow {
+  flex-grow: 1 !important;
+}
+
+.flex-col {
+  flex-direction: column !important;
+}
+
 .items-center {
   align-items: center !important;
 }
@@ -603,10 +611,6 @@ video {
 
 .justify-between {
   justify-content: space-between !important;
-}
-
-.overflow-hidden {
-  overflow: hidden !important;
 }
 
 .rounded-lg {
@@ -622,12 +626,22 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity)) !important;
 }
 
-.bg-\[url\(\'https\:\/\/image\.tmdb\.org\/t\/p\/w500\/xWT5F1DNxciNLEMXRl49iq8zvN7\.jpg\'\)\] {
-  background-image: url('https://image.tmdb.org/t/p/w500/xWT5F1DNxciNLEMXRl49iq8zvN7.jpg') !important;
+.bg-\[url\(\'https\:\/\/image\.tmdb\.org\/t\/p\/w500\/ilRyazdMJwN05exqhwK4tMKBYZs\.jpg\'\)\] {
+  background-image: url('https://image.tmdb.org/t/p/w500/ilRyazdMJwN05exqhwK4tMKBYZs.jpg') !important;
 }
 
-.\!bg-cover {
-  background-size: cover !important;
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops)) !important;
+}
+
+.from-topGradient {
+  --tw-gradient-from: #993000 var(--tw-gradient-from-position) !important;
+  --tw-gradient-to: rgb(153 48 0 / 0) var(--tw-gradient-to-position) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-bottomGradient {
+  --tw-gradient-to: #ffb520 var(--tw-gradient-to-position) !important;
 }
 
 .bg-cover {
@@ -651,18 +665,9 @@ video {
   line-height: 2rem !important;
 }
 
-.text-lg {
-  font-size: 1.125rem !important;
-  line-height: 1.75rem !important;
-}
-
 .text-xs {
   font-size: 0.75rem !important;
   line-height: 1rem !important;
-}
-
-.font-bold {
-  font-weight: 700 !important;
 }
 
 .uppercase {

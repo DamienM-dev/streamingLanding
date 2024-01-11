@@ -13,7 +13,7 @@ function App() {
     const fetchMovies = async () => {
       try {
         const res = await fetch(
-          "https://api.themoviedb.org/3/search/movie?query=The+Nightmare+Before+Christmas&api_key=4a27561cb4efc07bd11f3574a64dbf50"
+          "https://api.themoviedb.org/3/search/movie?query=Blade+Runner+2049&api_key=4a27561cb4efc07bd11f3574a64dbf50"
         );
 
         if (!res.ok) {
@@ -70,8 +70,8 @@ function App() {
   }, []);
 
   return (
-    <main>
-      <div className="bg-[url('https://image.tmdb.org/t/p/w500/xWT5F1DNxciNLEMXRl49iq8zvN7.jpg')] bg-cover">
+    <main className="flex flex-col min-h-screen">
+      <div className="bg-[url('https://image.tmdb.org/t/p/w500/ilRyazdMJwN05exqhwK4tMKBYZs.jpg')] bg-cover">
         <div className="p-3">
           {movies.map((movie, index) => (
             <>
@@ -99,6 +99,8 @@ function App() {
           ))}
           <ButtonWatch />
         </div>
+      </div>
+      <div className="bg-gradient-to-b from-topGradient to-bottomGradient flex-grow">
         <Popular />
       </div>
     </main>
